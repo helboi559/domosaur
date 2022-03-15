@@ -39,12 +39,18 @@ messText()
 //input:first dinosoar
 //output:when clicked, add red border
 const addBorder = ()=> {
-    imgEdit.addEventListener('click',()=> {
-        // console.log(e)
-        imgEdit.style.color="blue"
+    let image = document.querySelector('img');
+    // console.log(image)
+    image.addEventListener('click',()=> {
+        // console.log(triceratops)
+        // const currBorder = document.getElementById();
+        // console.log(currBorder)
+        image.style.border="1px solid red"
         // alert('hello world')
+        
     });
 }
+// let triceratops = document.querySelector('img');
 addBorder()
 
 
@@ -62,11 +68,9 @@ transparent()
 
 //input: background color button
 //output: change backbround color of row of pictures
-
+let button = document.querySelector('#toggle');
+let images = document.querySelector('#row');
 const toggleColor = () => {
-    let button = document.querySelector('#toggle');
-    let images = document.querySelector('#row');
-
     // console.log(images)
     button.addEventListener("click", ()=> {
         let backgroundColor = images.style.backgroundColor;
@@ -81,3 +85,12 @@ toggleColor()
 
 //input:dino biggify
 //output: if hovered grow image 200 px wide
+
+const enlarge = () => {
+    let biggify = document.querySelector('#row #biggify');
+    // console.log(biggify)
+    biggify.addEventListener('mouseover', () => {
+        biggify.style.width = '200px'
+    });
+}
+enlarge()
