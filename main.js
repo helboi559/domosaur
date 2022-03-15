@@ -89,7 +89,6 @@ toggleColor()
 const enlarge = () => {
     let biggify = document.querySelector('#row #biggify');
     // console.log(biggify)
-    // let start = biggify.style.width;
 
     biggify.addEventListener('mouseenter', () => {
         biggify.style.width = '200px'
